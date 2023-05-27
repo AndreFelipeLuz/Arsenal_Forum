@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forum</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Forum</h1>
+	<form>
+		<label for="name">Nome:</label>
+		<input type="text" id="name" name="name" required>
+		<label for="message">Messagem:</label>
+		<textarea id="message" name="message" rows="5" required></textarea>
+		<input type="submit" value="Enviar">
+		
+	</form>
+
+	<div id="messages"></div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		var guardar;
+		
+		$(document).ready(function() {
+			$("form").submit(function(e) {
+				e.preventDefault();
+				var name = $("#name").val();
+				var message = $("#message").val();
+				$("#messages").append("<div class='message'><strong>" + name + ":</strong> " + message + "<br><button class='open-overlay-button'>Responder</button></div>");
+				$("#name").val("");
+				$("#message").val("");
+			});
+			
+			document.getElementById("reply-button").addEventListener("click", replyclick, false);
+			
+			function replyclick() {
+				console.log('jakj');
+				var name = document.getElementById("overlay-name").value;
+				var message =document.getElementById("overlay-menssagen").value;
+				guardar.parent().append("<div class='message'> <strong> " + name + ": </strong> " + message + "</div>");
+				$(this).prev(".response").val("");
+				document.getElementById("overlay").classList.add("hidden");
+			}
+
+			$("#messages").on("click", ".open-overlay-button", function() {	
+				guardar =$(this)
+				document.getElementById("overlay").classList.remove("hidden");
+			});
+
+
+		});
+	</script>
+	<div  class="hidden" id="overlay" >
+		<label for="overlay-name">Nome:</label>
+		<input type="text" id="overlay-name" name="name" required>
+		<label for="overlay-menssagen">Messagem:</label>
+		<textarea id="overlay-menssagen" name="messagem" rows="5" required></textarea>
+		<button id ="reply-button"> Enviar</button>
+	</div>
+
+</body>
+</html>
+
+
+

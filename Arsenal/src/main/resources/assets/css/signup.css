@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: minhaFonte;
+  src: url(Amfibia-ExtraBoldExpanded.ttf);
+ 
+}
+
+* {
+  font-family: minhaFonte;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: minhaFonte;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
+  
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #00000060;
+  width: 400px;
+}
+
+h1{
+  font-family: minhaFonte;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4f4f4f
+}
+
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #828282;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  font-family: minhaFonte;
+
+  
+}
+
+.label-float{
+  font-family: minhaFonte;
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  font-family: minhaFonte;
+  border-bottom: 2px solid #DA217F;
+}
+
+.label-float label{
+  color: #828282;
+  pointer-event: none;
+  font-family: minhaFonte;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #ed68ac
+
+}
+
+button{
+  background-color: #828282;
+  border-color: #ed68ac;
+  color: #fff;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+  font-family: minhaFonte;
+
+}
+
+button:hover{
+  background-color: #DA217F;
+  color: #fff;
+  font-family: minhaFonte;
+
+}
+
+.justify-center{
+  font-family: minhaFonte;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #828282;
+}
+
+#msgError{
+  font-family: minhaFonte;
+  text-align: center;
+  color: #fff;
+  background-color: #828282;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
+
+#msgSuccess{
+  font-family: minhaFonte;
+  text-align: center;
+  color: #fff;
+  background-color: #828282;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
+
+

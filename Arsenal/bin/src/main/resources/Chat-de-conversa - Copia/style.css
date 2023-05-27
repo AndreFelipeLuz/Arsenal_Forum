@@ -1,0 +1,71 @@
+:root {
+  --cor1: #FAE5F1;
+  --cor2: #F4BEDC;
+  --cor3: #F093C4;
+  --cor4: #ED68AC;
+  --cor5: #EB4697;
+  --cor6: #DA217F;
+  --cor7: #C32076;
+  --cor8: #AD1E70;
+  --cor9: #861B64;
+}
+body {
+  background-color: var(--cor1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+form {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: none;
+  font-size: 16px;
+}
+input[type="submit"] {
+  background-color: #C32076;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.message {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#overlay{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ED68AC;
+  padding: 1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 60%;
+  border-radius:10px;
+}
+.hidden{
+  display: none;
+}
+

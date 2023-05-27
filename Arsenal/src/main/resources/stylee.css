@@ -1,0 +1,144 @@
+:root {
+    --cor1: #FAE5F1;
+    --cor2: #F4BEDC;
+    --cor3: #F093C4;
+    --cor4: #ED68AC;
+    --cor5: #EB4697;
+    --cor6: #DA217F;
+    --cor7: #C32076;
+    --cor8: #AD1E70;
+    --cor9: #861B64;
+}
+
+
+body,
+h1,
+h2,
+p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+header {
+    background-image: url(./imgs/fundo.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-items1 {
+    margin-left: 50px;
+}
+
+.header-items2 {
+    margin-right: 50px;
+}
+
+.header-items1,
+.header-items2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-icons {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.redondinho {
+    border-radius: 20px;
+}
+
+.menor {
+    padding: 13px;
+}
+
+.buttons-div {
+    margin-top: 25px;
+    margin-left: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons {
+    color: var(--cor1);
+    background-color: var(--cor6);
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-family: "inter";
+    font-weight: 900;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.questions-head {
+    font-family: "inter";
+    font-weight: 900;
+    font-size: 20px;
+    font-style: italic;
+    margin: 20px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.questions-marcadores {
+    display: flex;
+    gap: 80px;
+}
+
+.question {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 50px 10px 50px;
+    padding: 10px 20px 0px 20px;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+
+.question-text {
+    font-family: "inter";
+    font-weight: 900;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.question-right {
+    display: flex;
+    margin-left: 80px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+
+.question-left div {
+    display: flex;
+    gap: 10px;
+}
+
+.button2 {
+    color: var(--cor1);
+    background-color: var(--cor6);
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-family: "inter";
+    font-weight: 900;
+    font-size: 12px;
+    font-style: italic;
+}
