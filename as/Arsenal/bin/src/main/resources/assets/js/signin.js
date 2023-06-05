@@ -15,13 +15,14 @@ function entrar() {
   let senha = document.querySelector('#senha').value;
   let msgError = document.querySelector('#msgError');
   
-  fetch('http://localhost:8080/Usuarios/tokenAtivacao?usuario=${encodeURIComponent(usuario)}&senha=${encodeURIComponent(senha)}')
+  const url = `http://localhost:8080/Usuarios/tokenAtivacao?usuario=${encodeURIComponent(usuario)}&senha=${encodeURIComponent(senha)}`;
+
+  fetch(url)
     .then(response => response.json())
     .then(data => {
-      console.log("sahljdasjkdha");
-      let userValid = data.find(item => item.userCad === usuario && item.senhaCad === senha)  !== null;
+      let tokenAtivacao = data;
 
-      if (userValid) {
+      if (tokenAtivacao) {
         window.location.href = '../../index.html';
         
         let mathRandom = Math.random().toString(16).substr(2);
@@ -47,5 +48,3 @@ function entrar() {
       msgError.innerHTML = 'Erro ao fazer a requisição';
     });
 }
-
-
